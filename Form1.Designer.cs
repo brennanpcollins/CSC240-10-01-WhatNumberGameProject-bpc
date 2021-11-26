@@ -125,7 +125,7 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             this.UxCompareButton.Location = new System.Drawing.Point(1533, 679);
             this.UxCompareButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.UxCompareButton.Name = "UxCompareButton";
-            this.UxCompareButton.Size = new System.Drawing.Size(265, 102);
+            this.UxCompareButton.Size = new System.Drawing.Size(266, 102);
             this.UxCompareButton.TabIndex = 7;
             this.UxCompareButton.Text = "Compare";
             this.UxCompareButton.UseVisualStyleBackColor = true;
