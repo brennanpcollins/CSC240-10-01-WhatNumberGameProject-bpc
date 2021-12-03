@@ -1,7 +1,7 @@
 ﻿
 namespace CSC240_10_01_WhatNumberGameProject_bpc
 {
-    partial class Form1
+    partial class GameProject
     {
         /// <summary>
         ///  Required designer variable.
@@ -43,6 +43,7 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             this.UxGCounterLabel = new System.Windows.Forms.Label();
             this.UxACounterLabel = new System.Windows.Forms.Label();
             this.UxAttemptCounterTextBox = new System.Windows.Forms.TextBox();
+            this.UxResetButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // UxGuessTitleLabel
@@ -55,7 +56,6 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             this.UxGuessTitleLabel.Size = new System.Drawing.Size(602, 69);
             this.UxGuessTitleLabel.TabIndex = 0;
             this.UxGuessTitleLabel.Text = "Guess The Number!";
-            this.UxGuessTitleLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // UxGuessSubtitleLabel
             // 
@@ -76,6 +76,7 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             this.UxGameCounterTexBox.Name = "UxGameCounterTexBox";
             this.UxGameCounterTexBox.Size = new System.Drawing.Size(89, 41);
             this.UxGameCounterTexBox.TabIndex = 2;
+            this.UxGameCounterTexBox.TabStop = false;
             // 
             // UxHintTextBox
             // 
@@ -101,12 +102,12 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             // UxNumberInputTextBox
             // 
             this.UxNumberInputTextBox.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxNumberInputTextBox.Location = new System.Drawing.Point(1124, 680);
+            this.UxNumberInputTextBox.Location = new System.Drawing.Point(1124, 679);
             this.UxNumberInputTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.UxNumberInputTextBox.Multiline = true;
             this.UxNumberInputTextBox.Name = "UxNumberInputTextBox";
             this.UxNumberInputTextBox.Size = new System.Drawing.Size(351, 101);
-            this.UxNumberInputTextBox.TabIndex = 5;
+            this.UxNumberInputTextBox.TabIndex = 1;
             this.UxNumberInputTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // UxGuessingLabel
@@ -129,6 +130,7 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             this.UxCompareButton.TabIndex = 7;
             this.UxCompareButton.Text = "Compare";
             this.UxCompareButton.UseVisualStyleBackColor = true;
+            this.UxCompareButton.Click += new System.EventHandler(this.UxCompareButton_Click);
             // 
             // UxStartGameButton
             // 
@@ -139,6 +141,7 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             this.UxStartGameButton.TabIndex = 8;
             this.UxStartGameButton.Text = "Start Game";
             this.UxStartGameButton.UseVisualStyleBackColor = true;
+            this.UxStartGameButton.Click += new System.EventHandler(this.UxStartGameButton_Click);
             // 
             // UxWrongCorrectTextBox
             // 
@@ -151,13 +154,14 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             // UxStartOverButton
             // 
             this.UxStartOverButton.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxStartOverButton.Location = new System.Drawing.Point(1124, 1296);
+            this.UxStartOverButton.Location = new System.Drawing.Point(1124, 1248);
             this.UxStartOverButton.Name = "UxStartOverButton";
             this.UxStartOverButton.Size = new System.Drawing.Size(351, 159);
             this.UxStartOverButton.TabIndex = 10;
-            this.UxStartOverButton.Text = "Start Over";
+            this.UxStartOverButton.Text = "New Game";
             this.UxStartOverButton.UseVisualStyleBackColor = true;
             this.UxStartOverButton.Visible = false;
+            this.UxStartOverButton.Click += new System.EventHandler(this.UxStartOverButton_Click);
             // 
             // UxGCounterLabel
             // 
@@ -185,12 +189,25 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             this.UxAttemptCounterTextBox.Name = "UxAttemptCounterTextBox";
             this.UxAttemptCounterTextBox.Size = new System.Drawing.Size(88, 44);
             this.UxAttemptCounterTextBox.TabIndex = 13;
+            this.UxAttemptCounterTextBox.TabStop = false;
             // 
-            // Form1
+            // UxResetButton
+            // 
+            this.UxResetButton.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UxResetButton.Location = new System.Drawing.Point(2168, 1206);
+            this.UxResetButton.Name = "UxResetButton";
+            this.UxResetButton.Size = new System.Drawing.Size(443, 254);
+            this.UxResetButton.TabIndex = 15;
+            this.UxResetButton.Text = "Start Over! Reset Board.";
+            this.UxResetButton.UseVisualStyleBackColor = true;
+            this.UxResetButton.Click += new System.EventHandler(this.UxResetButton_Click);
+            // 
+            // GameProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 42F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2705, 1501);
+            this.ClientSize = new System.Drawing.Size(2645, 1501);
+            this.Controls.Add(this.UxResetButton);
             this.Controls.Add(this.UxAttemptCounterTextBox);
             this.Controls.Add(this.UxACounterLabel);
             this.Controls.Add(this.UxGCounterLabel);
@@ -207,8 +224,9 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             this.Controls.Add(this.UxGuessTitleLabel);
             this.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.Name = "Form1";
+            this.Name = "GameProject";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.GameProject_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,6 +248,7 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
         private System.Windows.Forms.Label UxGCounterLabel;
         private System.Windows.Forms.Label UxACounterLabel;
         private System.Windows.Forms.TextBox UxAttemptCounterTextBox;
+        private System.Windows.Forms.Button UxResetButton;
     }
 }
 

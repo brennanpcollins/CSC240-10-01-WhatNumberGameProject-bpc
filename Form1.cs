@@ -10,20 +10,88 @@ using System.Windows.Forms;
 
 namespace CSC240_10_01_WhatNumberGameProject_bpc
 {
-    public partial class Form1 : Form
+    public partial class GameProject : Form
     {
-        public Form1()
+            
+            int randomN;
+            int input;
+            int games = 0;
+            int attempt = 0;
+            Random randomNu = new Random();
+            
+
+
+        public GameProject()
         {
-            InitializeComponent();
+            InitializeComponent();   
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void UxStartGameButton_Click(object sender, EventArgs e)
+        {   
+            randomN = randomNu.Next(1, 10);
+        }
+
+
+        private void UxCompareButton_Click(object sender, EventArgs e)
+        {
+            input = Convert.ToInt32(UxNumberInputTextBox.Text);
+            attempt += 1;
+            UxAttemptCounterTextBox.Text = attempt.ToString();
+            if (input == randomN)
+            {
+                UxWrongCorrectTextBox.Text = "Correct!";
+                UxStartOverButton.Visible = true;
+                UxStartGameButton.Visible = false;
+                UxCompareButton.Enabled = false;
+                UxHintTextBox.Text = null;
+            }
+            else
+            {   
+                    UxWrongCorrectTextBox.Text = "Wrong! Look at the hints.";
+                    if (input > randomN)
+                {
+                    UxHintTextBox.Text = "Guess a little lower.";
+                }
+                    else
+                {
+                    UxHintTextBox.Text = "Guess a little higher.";
+                }
+             
+            }
+        }
+
+        private void GameProject_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void UxStartOverButton_Click(object sender, EventArgs e)
         {
+            
+            attempt = 0;
+            UxAttemptCounterTextBox.Text = attempt.ToString();
+            randomN = randomNu.Next(1, 10);
+            games += 1;
+            UxGameCounterTexBox.Text = games.ToString();
+            UxNumberInputTextBox.Text = null;
+            UxCompareButton.Enabled = true;
+            UxStartOverButton.Visible = false;
+            UxHintTextBox.Text = null;
+            UxWrongCorrectTextBox.Text = null;
+        }
+
+        private void UxResetButton_Click(object sender, EventArgs e)
+        {
+            UxStartOverButton.Visible = false;
+            UxStartGameButton.Visible = true;
+            UxCompareButton.Enabled = true;
+            UxAttemptCounterTextBox.Text = attempt.ToString();
+            attempt = 0;
+            games = 0;
+            UxGameCounterTexBox.Text = games.ToString();
+            UxNumberInputTextBox.Text = null;
+            UxHintTextBox.Text = null;
+            UxWrongCorrectTextBox.Text = null;
 
         }
     }

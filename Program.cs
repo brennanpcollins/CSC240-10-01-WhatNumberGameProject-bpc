@@ -17,7 +17,7 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new GameProject());
         }
     }
 }
