@@ -52,12 +52,12 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             // UxGuessTitleLabel
             // 
             this.UxGuessTitleLabel.AutoSize = true;
-            this.UxGuessTitleLabel.BackColor = System.Drawing.Color.Red;
+            this.UxGuessTitleLabel.BackColor = System.Drawing.Color.Transparent;
             this.UxGuessTitleLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.UxGuessTitleLabel.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 25.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxGuessTitleLabel.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.UxGuessTitleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.UxGuessTitleLabel.Image = ((System.Drawing.Image)(resources.GetObject("UxGuessTitleLabel.Image")));
-            this.UxGuessTitleLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.UxGuessTitleLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.UxGuessTitleLabel.Location = new System.Drawing.Point(895, 80);
             this.UxGuessTitleLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.UxGuessTitleLabel.Name = "UxGuessTitleLabel";
@@ -69,9 +69,9 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             // 
             this.UxGuessSubtitleLabel.AutoSize = true;
             this.UxGuessSubtitleLabel.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxGuessSubtitleLabel.ForeColor = System.Drawing.Color.Maroon;
+            this.UxGuessSubtitleLabel.ForeColor = System.Drawing.Color.Black;
             this.UxGuessSubtitleLabel.Image = ((System.Drawing.Image)(resources.GetObject("UxGuessSubtitleLabel.Image")));
-            this.UxGuessSubtitleLabel.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.UxGuessSubtitleLabel.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.UxGuessSubtitleLabel.Location = new System.Drawing.Point(1224, 176);
             this.UxGuessSubtitleLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.UxGuessSubtitleLabel.Name = "UxGuessSubtitleLabel";
@@ -81,36 +81,38 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             // 
             // UxGameCounterTexBox
             // 
-            this.UxGameCounterTexBox.BackColor = System.Drawing.Color.Blue;
+            this.UxGameCounterTexBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.UxGameCounterTexBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UxGameCounterTexBox.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxGameCounterTexBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.UxGameCounterTexBox.Location = new System.Drawing.Point(479, 1128);
+            this.UxGameCounterTexBox.ForeColor = System.Drawing.Color.Teal;
+            this.UxGameCounterTexBox.Location = new System.Drawing.Point(484, 1128);
             this.UxGameCounterTexBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.UxGameCounterTexBox.Name = "UxGameCounterTexBox";
-            this.UxGameCounterTexBox.Size = new System.Drawing.Size(89, 34);
+            this.UxGameCounterTexBox.Size = new System.Drawing.Size(46, 34);
             this.UxGameCounterTexBox.TabIndex = 2;
             this.UxGameCounterTexBox.TabStop = false;
+            this.UxGameCounterTexBox.Visible = false;
             // 
             // UxHintTextBox
             // 
-            this.UxHintTextBox.BackColor = System.Drawing.Color.Lime;
+            this.UxHintTextBox.BackColor = System.Drawing.Color.OrangeRed;
             this.UxHintTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UxHintTextBox.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxHintTextBox.ForeColor = System.Drawing.Color.Red;
+            this.UxHintTextBox.ForeColor = System.Drawing.Color.White;
             this.UxHintTextBox.Location = new System.Drawing.Point(2092, 765);
             this.UxHintTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.UxHintTextBox.Multiline = true;
             this.UxHintTextBox.Name = "UxHintTextBox";
             this.UxHintTextBox.Size = new System.Drawing.Size(474, 96);
             this.UxHintTextBox.TabIndex = 3;
+            this.UxHintTextBox.Visible = false;
             // 
             // UxHintTitleLabel
             // 
             this.UxHintTitleLabel.AutoSize = true;
-            this.UxHintTitleLabel.BackColor = System.Drawing.Color.Lime;
+            this.UxHintTitleLabel.BackColor = System.Drawing.Color.OrangeRed;
             this.UxHintTitleLabel.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxHintTitleLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.UxHintTitleLabel.ForeColor = System.Drawing.Color.White;
             this.UxHintTitleLabel.Location = new System.Drawing.Point(2265, 728);
             this.UxHintTitleLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.UxHintTitleLabel.Name = "UxHintTitleLabel";
@@ -120,15 +122,15 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             // 
             // UxNumberInputTextBox
             // 
-            this.UxNumberInputTextBox.BackColor = System.Drawing.Color.Black;
+            this.UxNumberInputTextBox.BackColor = System.Drawing.Color.Wheat;
             this.UxNumberInputTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UxNumberInputTextBox.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxNumberInputTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.UxNumberInputTextBox.Location = new System.Drawing.Point(1291, 733);
+            this.UxNumberInputTextBox.ForeColor = System.Drawing.Color.Black;
+            this.UxNumberInputTextBox.Location = new System.Drawing.Point(1292, 734);
             this.UxNumberInputTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.UxNumberInputTextBox.Multiline = true;
             this.UxNumberInputTextBox.Name = "UxNumberInputTextBox";
-            this.UxNumberInputTextBox.Size = new System.Drawing.Size(58, 46);
+            this.UxNumberInputTextBox.Size = new System.Drawing.Size(62, 46);
             this.UxNumberInputTextBox.TabIndex = 1;
             this.UxNumberInputTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -136,12 +138,12 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             // 
             this.UxGuessingLabel.AutoSize = true;
             this.UxGuessingLabel.BackColor = System.Drawing.Color.Transparent;
-            this.UxGuessingLabel.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxGuessingLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.UxGuessingLabel.Location = new System.Drawing.Point(1109, 728);
+            this.UxGuessingLabel.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UxGuessingLabel.ForeColor = System.Drawing.Color.Aqua;
+            this.UxGuessingLabel.Location = new System.Drawing.Point(1097, 728);
             this.UxGuessingLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.UxGuessingLabel.Name = "UxGuessingLabel";
-            this.UxGuessingLabel.Size = new System.Drawing.Size(171, 51);
+            this.UxGuessingLabel.Size = new System.Drawing.Size(195, 60);
             this.UxGuessingLabel.TabIndex = 6;
             this.UxGuessingLabel.Text = "Guess:";
             // 
@@ -151,7 +153,8 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             this.UxCompareButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.UxCompareButton.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UxCompareButton.ForeColor = System.Drawing.Color.Yellow;
-            this.UxCompareButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.UxCompareButton.Image = ((System.Drawing.Image)(resources.GetObject("UxCompareButton.Image")));
+            this.UxCompareButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.UxCompareButton.Location = new System.Drawing.Point(1533, 678);
             this.UxCompareButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.UxCompareButton.Name = "UxCompareButton";
@@ -166,8 +169,9 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             this.UxStartGameButton.BackColor = System.Drawing.Color.Aqua;
             this.UxStartGameButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.UxStartGameButton.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxStartGameButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.UxStartGameButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.UxStartGameButton.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.UxStartGameButton.Image = ((System.Drawing.Image)(resources.GetObject("UxStartGameButton.Image")));
+            this.UxStartGameButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.UxStartGameButton.Location = new System.Drawing.Point(1145, 415);
             this.UxStartGameButton.Name = "UxStartGameButton";
             this.UxStartGameButton.Size = new System.Drawing.Size(350, 202);
@@ -178,25 +182,28 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             // 
             // UxWrongCorrectTextBox
             // 
-            this.UxWrongCorrectTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.UxWrongCorrectTextBox.BackColor = System.Drawing.Color.SteelBlue;
             this.UxWrongCorrectTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UxWrongCorrectTextBox.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxWrongCorrectTextBox.ForeColor = System.Drawing.Color.Aqua;
+            this.UxWrongCorrectTextBox.ForeColor = System.Drawing.Color.MintCream;
             this.UxWrongCorrectTextBox.Location = new System.Drawing.Point(1109, 1154);
             this.UxWrongCorrectTextBox.Multiline = true;
             this.UxWrongCorrectTextBox.Name = "UxWrongCorrectTextBox";
             this.UxWrongCorrectTextBox.Size = new System.Drawing.Size(419, 85);
             this.UxWrongCorrectTextBox.TabIndex = 9;
+            this.UxWrongCorrectTextBox.Visible = false;
             // 
             // UxStartOverButton
             // 
             this.UxStartOverButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.UxStartOverButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.UxStartOverButton.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxStartOverButton.ForeColor = System.Drawing.Color.Aqua;
+            this.UxStartOverButton.ForeColor = System.Drawing.Color.Navy;
+            this.UxStartOverButton.Image = ((System.Drawing.Image)(resources.GetObject("UxStartOverButton.Image")));
+            this.UxStartOverButton.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.UxStartOverButton.Location = new System.Drawing.Point(1145, 1233);
             this.UxStartOverButton.Name = "UxStartOverButton";
-            this.UxStartOverButton.Size = new System.Drawing.Size(350, 159);
+            this.UxStartOverButton.Size = new System.Drawing.Size(350, 150);
             this.UxStartOverButton.TabIndex = 10;
             this.UxStartOverButton.Text = "New Game";
             this.UxStartOverButton.UseVisualStyleBackColor = false;
@@ -206,9 +213,11 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             // UxGCounterLabel
             // 
             this.UxGCounterLabel.AutoSize = true;
-            this.UxGCounterLabel.BackColor = System.Drawing.Color.Blue;
+            this.UxGCounterLabel.BackColor = System.Drawing.Color.Transparent;
             this.UxGCounterLabel.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxGCounterLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.UxGCounterLabel.ForeColor = System.Drawing.Color.Black;
+            this.UxGCounterLabel.Image = ((System.Drawing.Image)(resources.GetObject("UxGCounterLabel.Image")));
+            this.UxGCounterLabel.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.UxGCounterLabel.Location = new System.Drawing.Point(38, 1120);
             this.UxGCounterLabel.Name = "UxGCounterLabel";
             this.UxGCounterLabel.Size = new System.Drawing.Size(447, 51);
@@ -218,9 +227,11 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             // UxACounterLabel
             // 
             this.UxACounterLabel.AutoSize = true;
-            this.UxACounterLabel.BackColor = System.Drawing.Color.Blue;
+            this.UxACounterLabel.BackColor = System.Drawing.Color.Transparent;
             this.UxACounterLabel.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxACounterLabel.ForeColor = System.Drawing.Color.Red;
+            this.UxACounterLabel.ForeColor = System.Drawing.Color.Black;
+            this.UxACounterLabel.Image = ((System.Drawing.Image)(resources.GetObject("UxACounterLabel.Image")));
+            this.UxACounterLabel.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.UxACounterLabel.Location = new System.Drawing.Point(38, 1233);
             this.UxACounterLabel.Name = "UxACounterLabel";
             this.UxACounterLabel.Size = new System.Drawing.Size(492, 49);
@@ -229,14 +240,15 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             // 
             // UxAttemptCounterTextBox
             // 
-            this.UxAttemptCounterTextBox.BackColor = System.Drawing.Color.Blue;
+            this.UxAttemptCounterTextBox.BackColor = System.Drawing.Color.Gray;
             this.UxAttemptCounterTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UxAttemptCounterTextBox.ForeColor = System.Drawing.Color.Red;
+            this.UxAttemptCounterTextBox.ForeColor = System.Drawing.Color.Black;
             this.UxAttemptCounterTextBox.Location = new System.Drawing.Point(526, 1238);
             this.UxAttemptCounterTextBox.Name = "UxAttemptCounterTextBox";
             this.UxAttemptCounterTextBox.Size = new System.Drawing.Size(88, 37);
             this.UxAttemptCounterTextBox.TabIndex = 13;
             this.UxAttemptCounterTextBox.TabStop = false;
+            this.UxAttemptCounterTextBox.Visible = false;
             // 
             // UxResetButton
             // 
@@ -244,7 +256,7 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             this.UxResetButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UxResetButton.BackgroundImage")));
             this.UxResetButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.UxResetButton.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UxResetButton.ForeColor = System.Drawing.Color.White;
+            this.UxResetButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.UxResetButton.Location = new System.Drawing.Point(2167, 1206);
             this.UxResetButton.Name = "UxResetButton";
             this.UxResetButton.Size = new System.Drawing.Size(442, 254);

@@ -34,6 +34,10 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
 
         private void UxCompareButton_Click(object sender, EventArgs e)
         {
+            UxAttemptCounterTextBox.Visible = true;
+            UxGameCounterTexBox.Visible = true;
+            UxHintTextBox.Visible = true;
+            UxWrongCorrectTextBox.Visible = true;
             input = Convert.ToInt32(UxNumberInputTextBox.Text);
             attempt += 1;
             UxAttemptCounterTextBox.Text = attempt.ToString();
@@ -78,6 +82,9 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             UxStartOverButton.Visible = false;
             UxHintTextBox.Text = null;
             UxWrongCorrectTextBox.Text = null;
+            UxWrongCorrectTextBox.Visible = false;
+            UxHintTextBox.Visible = false;
+            UxAttemptCounterTextBox.Visible = false;
         }
 
         private void UxResetButton_Click(object sender, EventArgs e)
@@ -92,7 +99,10 @@ namespace CSC240_10_01_WhatNumberGameProject_bpc
             UxNumberInputTextBox.Text = null;
             UxHintTextBox.Text = null;
             UxWrongCorrectTextBox.Text = null;
-
+            UxWrongCorrectTextBox.Visible = false;
+            UxHintTextBox.Visible = false;
+            UxAttemptCounterTextBox.Visible = false;
+            UxGameCounterTexBox.Visible = false;
         }
     }
 }
